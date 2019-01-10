@@ -30,16 +30,24 @@ function Apa (producator, cantitate, tip)
 
 function main()
 {
+    sliceAndContent();
+    
+    a = new Apa ("Borsec",2,"Plata");
+    parag.textContent = a.afis();
+    
+    setButtons();
+    
+    hoverApasa();
+}
+
+function sliceAndContent()
+{
     ID = "Alin Florentin";
     prenume = ID.slice(0,ID.indexOf(" "));
     nume = ID.slice(ID.lastIndexOf(" ")+1,ID.length);
     parag = document.getElementById("p4");
     parag.textContent = "Nume : "+nume+" Prenume: "+prenume; 
     
-    a = new Apa ("Borsec",2,"Plata");
-    parag.textContent = a.afis();
-    
-    setButtons();
 }
 
 function setButtons ()
@@ -67,6 +75,30 @@ function setButtons ()
     alWt.onclick = function(){
         alert(a.afis());
     }
+}
+
+var apsP, apsB;
+
+function hoverApasa()
+{
+    apsP = document.getElementById("apsP");
+    apsB = document.getElementById("apsB");
+    
+    apsB.onmouseover = function() {
+        
+        apsP.textContent = apsP.innerHTML.toUpperCase();
+        apsP.style.backgroundColor = "GREEN";
+    }
+    
+    absB.onmouseout = function() {
+        apsP.textContent = apsP.innerHTML.toLowerCase();
+        apsP.style.backgroundColor = "WHITE";
+    }
+    
+    
+    
+    
+    
 }
 
 

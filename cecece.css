@@ -1,5 +1,5 @@
 
-p{
+.empP {
     font-family:  cursive;
     font-size: 25px;
 }
@@ -16,4 +16,20 @@ p{
 #p3 {
     font-weight: lighter;
     border: thick ridge;
+}
+
+#apsP {
+    font-weight: normal;
+    font-family: arial;
+}
+
+#positionsPlayfield{
+    position: fixed;
+    background-color: azure;
+}
+
+#bird {
+    position: absolute;
+    top: 0px;
+    left: 5px;
 }
