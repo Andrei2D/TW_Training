@@ -1,0 +1,19 @@
+
+p{
+    font-family:  cursive;
+    font-size: 25px;
+}
+
+#p1 {
+    font-weight: normal;
+    text-shadow: -2px;
+}
+#p2 {
+    font-weight: bold;
+    border: thick;
+   
+}
+#p3 {
+    font-weight: lighter;
+    border: thick ridge;
+}
